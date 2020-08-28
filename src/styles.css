@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-app {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.container-app .clock-container {
+  width: 95%;
+  height: 30vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #000000;
+  background-image: linear-gradient(-315deg, #000000 0%, #414141 74%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-sections {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2px;
+}
+
+.container-sections h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.container-sections p {
+  margin: -15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-sections h1 {
+    font-size: 40px;
+  }
+  .container-sections p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container-sections h1 {
+    font-size: 30px;
+  }
+  .container-sections p {
+    font-size: 10px;
+    margin: -10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container-sections h1 {
+    font-size: 25px;
+  }
+  .container-sections p {
+    font-size: 10px;
+    margin: -9px;
+  }
+}
+
+.dots {
+  color: white;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .dots {
+    font-size: 25px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

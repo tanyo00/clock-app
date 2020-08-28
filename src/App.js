@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles.css";
+import Day from "./components/Day";
+import Hours from "./components/Hours";
+import Minutes from "./components/Minutes";
+import Seconds from "./components/Seconds";
 
+function Dots() {
+  return <h1 className="dots">:</h1>;
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-app">
+      <div className="clock-container">
+        <Day />
+        <Dots />
+        <Hours />
+        <Dots />
+        <Minutes />
+        <Dots />
+        <Seconds />
+      </div>
     </div>
   );
 }
